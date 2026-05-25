@@ -418,6 +418,28 @@ html{
     }
 }
 
+/* Navbar second row */
+.nav-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #232f3e;
+    padding: 10px 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.nav-bottom a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.wishlist {
+    margin-left: auto;
+    white-space: nowrap;
+}
 .hamburger{
     display:none;
     font-size:28px;
