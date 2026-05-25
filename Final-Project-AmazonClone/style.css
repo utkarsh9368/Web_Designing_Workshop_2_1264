@@ -484,3 +484,19 @@ html{
     }
 
 }
+@media (max-width: 768px) {
+
+  .mobile-menu {
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 320px;
+    z-index: 9999;
+  }
+
+  .navbar {
+    position: relative;
+    z-index: 10000;
+  }
+}
