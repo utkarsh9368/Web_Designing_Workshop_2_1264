@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Largest Number Finder</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: gray;
+            text-align: center;
+        }
+
+        .box {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f2f2f2;
+            border: 1px solid black;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            width: 95%;
+            padding: 8px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        h3 {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Largest Number Finder</h2>
+
+    <input type="number" id="n1" placeholder="Enter Number 1"><br>
+    <input type="number" id="n2" placeholder="Enter Number 2"><br>
+    <input type="number" id="n3" placeholder="Enter Number 3"><br>
+    <input type="number" id="n4" placeholder="Enter Number 4"><br>
+    <input type="number" id="n5" placeholder="Enter Number 5"><br><br>
+
+    <button onclick="findLargest()">Find Largest</button>
+
+    <h3 id="result"></h3>
+</div>
+
+<script>
+function findLargest() {
+
+    let a = Number(document.getElementById("n1").value);
+    let b = Number(document.getElementById("n2").value);
+    let c = Number(document.getElementById("n3").value);
+    let d = Number(document.getElementById("n4").value);
+    let e = Number(document.getElementById("n5").value);
+
+    let largest;
+
+    if (a >= b && a >= c && a >= d && a >= e) {
+        largest = a;
+    }
+    else if (b >= a && b >= c && b >= d && b >= e) {
+        largest = b;
+    }
+    else if (c >= a && c >= b && c >= d && c >= e) {
+        largest = c;
+    }
+    else if (d >= a && d >= b && d >= c && d >= e) {
+        largest = d;
+    }
+    else {
+        largest = e;
+    }
+
+    document.getElementById("result").innerHTML = "Largest Number is: " + largest;
+}
+</script>
+
+</body>
+</html>
